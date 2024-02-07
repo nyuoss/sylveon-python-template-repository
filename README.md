@@ -10,7 +10,27 @@ This is a template repository for Python designed to work out of the box for dev
 
 A template for issue and pull requests is also provided for collaborative development. 
 # Setup (PDM)
-blah
+
+
+INITIALIZE PDM USING `pdm install`
+
+INSTALL AND RUN PDM PROJECT USING 
+```
+pdm install
+pdm run python -m module_name
+    OR if running from venv
+python -m module_name
+```
+
+I believe this runs from the __main__.py file
+
+Python Dependency Management (PDM) is used to manage dependencies for this repository. Alternatively, a  ```requirements.txt``` is provided for installing dependencies using a package manager such as ```pip```
+
+The ```hello.py``` module is a sample program that simply prints out "Hello World".
+
+Testing in this repository is done using the pytest framework. An example of a sample test asserting 
+```2 + 2 == 4``` can be found in the ```tests``` directory. Tests are automatically executed in the pipeline whenever pushes are made to the repo. 
+
 # Package Management (Installing Dependencies)
 
 Alternatively, a  ```requirements.txt``` is provided for installing dependencies using a package manager such as ```pip``` using the command:
