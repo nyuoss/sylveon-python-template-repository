@@ -29,7 +29,10 @@ dev = [
     "black>=24.1.1",
     "mypy>=1.8.0",
 ]
+
 [tool.pdm.scripts]
 start = "python -m sylveon"
-test = "pytest"
-format = "black ."
+test = "pytest tests"
+lint = "mypy src tests"
+format = "black src tests"
+format-test = "black --check src tests"
