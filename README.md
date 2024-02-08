@@ -1,5 +1,9 @@
 # Sylveon
 
+[![CircleCI Status](https://dl.circleci.com/status-badge/img/circleci/3xWZeNMCu5Vj5AMLtYkBLD/3BbpjRhT2mTt2SAzHyziCj/tree/main.svg?style=svg&circle-token=a3755171dc7af90c9eed83c7eb96aa5f59faef63)](https://dl.circleci.com/status-badge/redirect/circleci/3xWZeNMCu5Vj5AMLtYkBLD/3BbpjRhT2mTt2SAzHyziCj/tree/main)
+
+<!-- [![CircleCI](https://dl.circleci.com/status-badge/img/circleci/3xWZeNMCu5Vj5AMLtYkBLD/3BbpjRhT2mTt2SAzHyziCj/tree/main.svg?style=shield&circle-token=a3755171dc7af90c9eed83c7eb96aa5f59faef63)](https://dl.circleci.com/status-badge/redirect/circleci/3xWZeNMCu5Vj5AMLtYkBLD/3BbpjRhT2mTt2SAzHyziCj/tree/main) -->
+
 ## Description
 
 This is a template repository for Python designed to work out of the box for developing software projects. This repository provides the fundamental building blocks needed to design and develop projects including:
