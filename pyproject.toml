@@ -5,7 +5,9 @@ description = "Base Template for Python Open Source projects"
 authors = [
     {name = "Berry", email = "bl3056@nyu.edu"},
 ]
-dependencies = []
+dependencies = [
+    "pytest>=8.0.0",
+]
 requires-python = ">=3.12"
 readme = "README.md"
 license = {text = "MIT"}
@@ -23,3 +25,7 @@ dev = [
     "black>=24.1.1",
     "mypy>=1.8.0",
 ]
+[tool.pdm.scripts]
+start = "python -m sylveon"
+test = "pytest"
+format = "black ."
