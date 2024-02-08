@@ -3,7 +3,11 @@ name = "Sylveon"
 version = "0.1.0"
 description = "Base Template for Python Open Source projects"
 authors = [
-    {name = "Berry", email = "bl3056@nyu.edu"},
+    {name = "Susmitha Kusuma", email = "sk10689@nyu.edu"},
+    {name = "Berry Liu", email = "bl3056@nyu.edu"},
+    {name = "Margaret Jagger", email = "mj3102@nyu.edu"},
+    {name = "Calvin Tian", email = "calvin.tian@nyu.edu"},
+    {name = "Kevin", email = "kz1252@nyu.edu"},
 ]
 dependencies = [
     "pytest>=8.0.0",
