@@ -1,4 +1,7 @@
-# Description
+# Sylveon
+
+## Description
+
 This is a template repository for Python designed to work out of the box for developing software projects. This repository provides the fundamental building blocks needed to design and develop projects including:
 
 - Build Management
@@ -9,39 +12,34 @@ This is a template repository for Python designed to work out of the box for dev
 - Component Specification
 
 A template for issue and pull requests is also provided for collaborative development. 
-# Setup (PDM)
 
+## Setup (PDM)
 
-INITIALIZE PDM USING `pdm install`
+### Requirements
 
-INSTALL AND RUN PDM PROJECT USING 
-```
-pdm install
-pdm run python -m module_name
-    OR if running from venv
-python -m module_name
-```
+- [PDM](https://pdm-project.org/latest/)
 
-I believe this runs from the __main__.py file
+### Instructions
 
-Python Dependency Management (PDM) is used to manage dependencies for this repository. Alternatively, a  ```requirements.txt``` is provided for installing dependencies using a package manager such as ```pip```
+1. Clone project repository to your local machine
+2. Initialize repository using `pdm install`
+3. Activate virtual environment using `pdm venv activate`
+4. Run the project using `pdm run start`
 
-The ```hello.py``` module is a sample program that simply prints out "Hello World".
+View available scripts using `pdm run --list`
 
-Testing in this repository is done using the pytest framework. An example of a sample test asserting 
-```2 + 2 == 4``` can be found in the ```tests``` directory. Tests are automatically executed in the pipeline whenever pushes are made to the repo. 
+### Scripts
 
-# Package Management (Installing Dependencies)
+- `start` - Start the project
+- `test` - Run tests
+- `lint` - Run static analysis
+- `format` - Format code
 
-Alternatively, a  ```requirements.txt``` is provided for installing dependencies using a package manager such as ```pip``` using the command:
+## Component Specification
 
-```
-pip install -r requirements.txt
-```
+tdb
 
-# Component Specification
-blah
-# Objectives (Tentative):
+## Objectives (Tentative):
 
 1. Programming Language: ```Python``` ✅
 2. Toolchain/Runtime Environment: ```Python``` >= 3.9 ✅
@@ -54,10 +52,10 @@ blah
 9. Component Specification: ❌
 10. Issue and Pull Request Templates ❌
 
-# Authors
+## Authors
 
 - Susmitha Kusuma (sk10689@nyu.edu)
 - Berry Liu (bl3056@nyu.edu)
 - Margaret Jagger (mj3102@nyu.edu)
-- Calvin Tian (cat529@nyu.edu)
+- Calvin Tian (calvin.tian@nyu.edu)
 - Kevin Zheng (kz1252@nyu.edu)
