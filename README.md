@@ -1,33 +1,61 @@
-# Description
-This is a sample repository... blah
+# Sylveon
 
+## Description
 
-# Installing Dependencies
+This is a template repository for Python designed to work out of the box for developing software projects. This repository provides the fundamental building blocks needed to design and develop projects including:
 
-```
-pip install -r requirements.txt
-```
+- Build Management
+- Unit Testing
+- Continuous Integration
+- Static Analysis
+- Code Formatting
+- Component Specification
 
-# How to Set Up
+A template for issue and pull requests is also provided for collaborative development. 
 
-# Description
+## Setup (PDM)
 
-Python Dependency Management (PDM) is used to manage dependencies for this repository. Alternatively, a  ```requirements.txt``` is provided for installing dependencies using a package manager such as ```pip```
+### Requirements
 
-The ```hello.py``` module is a sample program that simply prints out "Hello World".
+- [PDM](https://pdm-project.org/latest/)
 
-Testing in this repository is done using the pytest framework. An example of a sample test asserting 
-```2 + 2 == 4``` can be found in the ```tests``` directory. Tests are automatically executed in the pipeline whenever pushes are made to the repo. 
+### Instructions
 
-# Objectives (Tentative):
+1. Clone project repository to your local machine
+2. Initialize repository using `pdm install`
+3. Activate virtual environment using `pdm venv activate`
+4. Run the project using `pdm run start`
+
+View available scripts using `pdm run --list`
+
+### Scripts
+
+- `start` - Start the project
+- `test` - Run tests
+- `lint` - Run static analysis
+- `format` - Format code
+
+## Component Specification
+
+tdb
+
+## Objectives (Tentative):
 
 1. Programming Language: ```Python``` ✅
-2. Toolchain/Runtime Environment: ?
-3. Testing Framework: pytest ✅
-4. Continuous Integration Solution: CircleGI
+2. Toolchain/Runtime Environment: ```Python``` >= 3.9 ✅
+3. Testing Framework: ```pytest``` ✅
+4. Continuous Integration Solution: ```CircleGI``` ✅
 5. Static Analysis Tool: ```mypy```✅
 6. Code Formatting Solution: ```black``` ✅
 7. Package Manager: ```pip``` ✅
 8. Python Dependency Management ✅
 9. Component Specification: ❌
 10. Issue and Pull Request Templates ❌
+
+## Authors
+
+- Susmitha Kusuma (sk10689@nyu.edu)
+- Berry Liu (bl3056@nyu.edu)
+- Margaret Jagger (mj3102@nyu.edu)
+- Calvin Tian (calvin.tian@nyu.edu)
+- Kevin Zheng (kz1252@nyu.edu)

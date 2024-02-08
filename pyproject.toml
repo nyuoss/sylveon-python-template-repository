@@ -1,0 +1,38 @@
+[project]
+name = "Sylveon"
+version = "0.1.0"
+description = "Base Template for Python Open Source projects"
+authors = [
+    {name = "Susmitha Kusuma", email = "sk10689@nyu.edu"},
+    {name = "Berry Liu", email = "bl3056@nyu.edu"},
+    {name = "Margaret Jagger", email = "mj3102@nyu.edu"},
+    {name = "Calvin Tian", email = "calvin.tian@nyu.edu"},
+    {name = "Kevin", email = "kz1252@nyu.edu"},
+]
+dependencies = [
+    "pytest>=8.0.0",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=24.1.1",
+    "mypy>=1.8.0",
+]
+
+[tool.pdm.scripts]
+start = "python -m sylveon"
+test = "pytest tests"
+lint = "mypy src tests"
+format = "black src tests"
+format-test = "black --check src tests"
