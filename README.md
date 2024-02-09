@@ -41,7 +41,26 @@ View available scripts using `pdm run --list`
 
 ## Component Specification
 
-tdb
+We have included two examples of components within the `__main__.py` file: one is "Hello World" and the second is a component which finds the length of a string. 
+
+The "Hello World" component is a basic module which provides a function to print the greeting message "Hello World!" 
+
+The "String Length" component is designed to calculate the length of a given string. 
+
+We have imported both modules into the `__main__.py` file, to showcase how components can be imported into different files within a Python project. As seen from the code structure below (which only includes files relevant to the components) our import strategy assumes that all components will be within the `src/sylveon` directory. 
+
+```
+src/sylveon/
+|-- __init__.py
+|-- __main__.py
+|-- hello_world/
+|   |-- __init__.py
+|   |-- hello.py
+|-- string_length/
+|   |-- __init__.py
+|   |-- string_length.py
+
+```
 
 ## Objectives (Tentative):
 
@@ -53,7 +72,7 @@ tdb
 6. Code Formatting Solution: ```black``` ✅
 7. Package Manager: ```pip``` ✅
 8. Python Dependency Management ✅
-9. Component Specification: ❌
+9. Component Specification: ✅
 10. Issue and Pull Request Templates ❌
 
 ## Authors

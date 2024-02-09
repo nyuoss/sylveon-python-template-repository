@@ -4,11 +4,14 @@
 # but importing from __main__ has a different meaning
 
 
-def hello_world():
-    return "Hello World"
+from src.sylveon.hello.greeting import hello_world
+from src.sylveon.string_length.find_length import find_length
+
+
+def main():
+    hello_world()
+    find_length("Hello World!")
 
 
 if __name__ == "__main__":
-    print(hello_world())
-
-# change this to do component stuff
+    main()
