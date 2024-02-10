@@ -73,7 +73,7 @@ src/sylveon/
 7. Package Manager: ```pip``` ✅
 8. Python Dependency Management ✅
 9. Component Specification: ✅
-10. Issue and Pull Request Templates ❌
+10. Issue and Pull Request Templates ✅
 
 ## Authors
 
