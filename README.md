@@ -66,15 +66,15 @@ src/sylveon/
 
 ```
 
-## Objectives (Tentative)
+## Objectives
 
 1. Programming Language: ```Python``` ✅
-2. Toolchain/Runtime Environment: ```Python``` >= 3.9 ✅
+2. Toolchain/Runtime Environment: ```Python``` >= 3.12 ✅
 3. Testing Framework: ```pytest``` ✅
 4. Continuous Integration Solution: ```CircleGI``` ✅
 5. Static Analysis Tool: ```mypy```✅
 6. Code Formatting Solution: ```black``` ✅
-7. Package Manager: ```pip``` ✅
+7. Package Manager: ```pip/PDM``` ✅
 8. Python Dependency Management ✅
 9. Component Specification: ✅
 10. Issue and Pull Request Templates ✅
