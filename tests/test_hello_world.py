@@ -1,12 +1,10 @@
 # Test package and make sure it prints "Hello World"
 
 
-def test_hello_world(capsys):
-    from sylveon.hello.greeting import hello_world
+def test_hello_world():
+    from sylveon._hello._greeting import hello_world
 
     # call the function
-    hello_world()
-    captured = capsys.readouterr()
+    hello = hello_world()
 
-    # compare stdout with expected output
-    assert captured.out == "Hello World!\n"
+    assert hello == "Hello World"
