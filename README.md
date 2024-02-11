@@ -41,24 +41,28 @@ View available scripts using `pdm run --list`
 
 ## Component Specification
 
-We have included two examples of components within the `__main__.py` file: one is "Hello World" and the second is a component which finds the length of a string.
+For the purposes of this project, and scope of this template, we are defining a component to be any group or individual module which performs a standalone functionality, utility, or otherwise.
 
-The "Hello World" component is a basic module which provides a function to print the greeting message "Hello World!"
+In structuring these components, we use the `__main__.py` file as the entry point into this application. Other utilities ("components") may be imported, but are not intended to be accessed by users. These are marked as such with a single underscore in front of the file name (e.g. _accessory.py)
 
-The "String Length" component is designed to calculate the length of a given string and print out the length to stdout.
+We have included two examples of components which are imported into the `__main__.py` file: one is "Hello World" which is not intended to be accessed by users, and the second is a component which finds the length of a string, which is meant to be accessed by users. 
 
-We have imported both modules into the `__main__.py` file, to showcase how components can be imported into different files within a Python project. As seen from the code structure below (which only includes files relevant to the components) our import strategy assumes that all components will be within the `src/sylveon` directory.
+The "Hello World" component is a basic module which provides a function to print the greeting message "Hello World!" 
 
-```text
+The "String Length" component is designed to calculate the length of a given string. 
+
+We have imported both modules into the `__main__.py` file, to showcase how components can be imported into different files within a Python project. As seen from the code structure below (which only includes files relevant to the components) our import strategy assumes that all components will be within the `src/sylveon` directory. 
+
+```
 src/sylveon/
 |-- __init__.py
 |-- __main__.py
-|-- hello_world/
+|-- _hello/
 |   |-- __init__.py
-|   |-- hello.py
+|   |-- _greeting.py
 |-- string_length/
 |   |-- __init__.py
-|   |-- string_length.py
+|   |-- find_length.py
 
 ```
 
